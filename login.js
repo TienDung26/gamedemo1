@@ -1,6 +1,7 @@
 window.onload = function () {
     var audio = document.getElementById('welcome-sound');
-    audio.play();
+    audio.loop = true;  // Thiết lập âm thanh tự động phát lại khi kết thúc
+    audio.play();  // Bắt đầu phát âm thanh ngay khi trang được tải
 
     // Xóa dữ liệu tài khoản và mật khẩu khi tải lại trang
     document.getElementById("username").value = "";
@@ -60,9 +61,3 @@ document.getElementById("toggle-password").addEventListener("click", function ()
     // Thay đổi biểu tượng
     this.textContent = type === "password" ? "👁️" : "🙈";
 });
-
-// Đảm bảo âm thanh phát lại liên tục
-var audio = document.getElementById('welcome-sound');
-audio.loop = true;  // Thiết lập âm thanh tự động phát lại khi kết thúc
-audio.play();  // Bắt đầu phát âm thanh
-
