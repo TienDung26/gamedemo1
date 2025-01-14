@@ -1,0 +1,59 @@
+/* Điều chỉnh các yếu tố cho điện thoại */
+body {
+    background-size: cover;
+}
+
+/* Thay đổi layout của .login-box trên màn hình điện thoại */
+.login-box {
+    width: 90%; /* Giảm chiều rộng của login-box để phù hợp với màn hình điện thoại */
+    padding: 20px;
+}
+
+#login-btn {
+    padding: 8px 16px;
+}
+
+/* Điều chỉnh logo cho nhỏ hơn trên điện thoại */
+.logo {
+    font-size: 2rem;
+    top: 20px;
+}
+
+/* Thay đổi cách hiển thị các nút xã hội trên điện thoại */
+.social-login {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.social-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Giảm kích thước chữ trên điện thoại */
+.login-box h2 {
+    font-size: 1.8rem;
+}
+
+.health-warning {
+    max-width: 200px;  /* Giới hạn chiều rộng của cảnh báo trên điện thoại */
+    font-size: 0.8rem;
+}
+
+.password-container {
+    width: 100%;
+}
+
+#password {
+    width: calc(100% - 30px); /* Căn chỉnh ô nhập */
+}
+
+.toggle-password {
+    font-size: 16px;
+}

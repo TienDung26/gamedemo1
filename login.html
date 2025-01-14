@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+</head>
+<body>
+  <div id="login-container">
+    <div class="login-box">
+        <div class="health-warning">
+            <img src="https://www.vltkh5.zing.vn/images/tag18.jpg" alt="Health Warning">
+        </div>    
+        <div class="logo">
+     
+        </div>      
+      <h2>Ca ro truyền kì</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Account" required>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Password" required>
+            <span id="toggle-password" class="toggle-password">👁️</span>
+        </div>        
+        <button type="submit" id="login-btn">Login</button>
+        <!-- Phần Forgot Password -->
+      <div class="forgot-password">
+        <a href="forgot-password.html"></a>
+      </div>
+        <div class="social-login">
+            <button class="social-btn google-btn" onclick="window.location.href='https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=YOUR_GOOGLE_REDIRECT_URI&response_type=code&scope=openid%20profile%20email';">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" alt="Google" />
+            </button>
+            <button class="social-btn facebook-btn" onclick="window.location.href='https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=YOUR_FACEBOOK_REDIRECT_URI&scope=email,public_profile';">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+            </button>
+            <button class="social-btn apple-btn" onclick="window.location.href='https://appleid.apple.com/auth/authorize?client_id=YOUR_APPLE_CLIENT_ID&redirect_uri=YOUR_APPLE_REDIRECT_URI&response_type=code id_token&scope=email';">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" />
+            </button>
+            <button class="social-btn sdt-btn" onclick="window.location.href='phone-login.html';">
+                Sign Up with Phone Number
+            </button>
+            <button class="social-btn play-btn" onclick="window.location.href='index.html';">
+                Play Now
+            </button>
+      </form>
+    </div>
+    <div class="terms">
+        <input type="checkbox" id="terms-checkbox" required>
+        <span>Bằng việc đăng nhập, bạn đồng ý với <a href="terms.html" target="_blank">Điều khoản và Điều kiện</a> của chúng tôi.</span>
+    </div>
+  </div>
+  <audio id="welcome-sound" src="assets/sounds/victory-awaits-in-the-gaming-universe_astronaut-265184.mp3" preload="auto"></audio>
+
+  <script src="login.js"></script>
+</body>
+</html>
